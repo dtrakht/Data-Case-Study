@@ -7,7 +7,7 @@ By David Trakhtenberg
 3. Run test_food_inspections_etl.py to unit test
 4. Tables/files will be output to C:/users/{username}/Food Inspections Data 
 5. Can also view line by line input/output in Food Inspections Notebook.ipynb
-6. Use to transformed data to analyze away!
+6. Use the transformed data to analyze away!
   
 ## Technologies Used
 * I used the following technologies: Github, Jupyter Notebook, and Python 3.6.8. 
