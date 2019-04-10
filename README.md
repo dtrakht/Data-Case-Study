@@ -25,7 +25,7 @@ I used Python to extract the dataset, transform it with several steps of logic, 
 I also created a unit test script to validate a few parts of the ETL code. 
 
 ## Files Created
-*food_inspections_etl.py 
-*test_food_inspections_etl.py 
-*Food Inspections Notebook.ipynb 
-*README.md 
+* food_inspections_etl.py 
+* test_food_inspections_etl.py 
+* Food Inspections Notebook.ipynb 
+* README.md 
