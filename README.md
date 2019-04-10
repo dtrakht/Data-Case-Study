@@ -21,11 +21,11 @@ Dataset: [link](https://data.cityofchicago.org/Health-Human-Services/Food-Inspec
 +Table A includes a list of all inspections
 +Table B includes a list of all violations and comments associated with each inspection
 
-I used Python to extracted the dataset, transformed it with several steps of logic, and loaded it into three output csv files. 
-I also created a unit test script to validate a few parts of the ETL scipt. 
+I used Python to extract the dataset, transform it with several steps of logic, and load it into three output csv files. 
+I also created a unit test script to validate a few parts of the ETL code. 
 
 ## Files Created
-+food_inspections_etl.py
-+test_food_inspections_etl.py
+*food_inspections_etl.py
+-test_food_inspections_etl.py
 +Food Inspections Notebook.ipynb
 +README.md
