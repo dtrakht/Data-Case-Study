@@ -18,14 +18,14 @@ I used the following Python libraries: Sodapy, numpy, and pandas.
 Dataset: [link](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data)
 
 **Create 2 output tables such that:**
-*Table A includes a list of all inspections
-*Table B includes a list of all violations and comments associated with each inspection
++Table A includes a list of all inspections
++Table B includes a list of all violations and comments associated with each inspection
 
 I used Python to extracted the dataset, transformed it with several steps of logic, and loaded it into three output csv files. 
 I also created a unit test script to validate a few parts of the ETL scipt. 
 
 ## Files Created
-*food_inspections_etl.py
-*test_food_inspections_etl.py
-*Food Inspections Notebook.ipynb
-*README.md
++food_inspections_etl.py
++test_food_inspections_etl.py
++Food Inspections Notebook.ipynb
++README.md
