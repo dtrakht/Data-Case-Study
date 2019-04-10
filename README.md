@@ -10,16 +10,16 @@ By David Trakhtenberg
 6. Use to transformed data to analyze away!
   
 ## Technologies Used
-1. I used the following technologies: Github, Jupyter Notebook, and Python 3.6.8. 
-1. I used the following Python libraries: Sodapy, numpy, and pandas. 
+* I used the following technologies: Github, Jupyter Notebook, and Python 3.6.8. 
+* I used the following Python libraries: Sodapy, numpy, and pandas. 
 
 ## Requirements
 **Use a language of your choice to develop a script that reads the dataset and pushes an output to separate csv files**
 Dataset: [link](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data)
 
 **Create 2 output tables such that:**
-*Table A includes a list of all inspections 
-*Table B includes a list of all violations and comments associated with each inspection 
+1. Table A includes a list of all inspections 
+1. Table B includes a list of all violations and comments associated with each inspection 
 
 I used Python to extract the dataset, transform it with several steps of logic, and load it into three output csv files. 
 I also created a unit test script to validate a few parts of the ETL code. 
