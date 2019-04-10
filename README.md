@@ -5,13 +5,13 @@ By David Trakhtenberg
 1. Install sodapy dependency using pip install sodapy
 2. Run food_inspections_etl.py
 3. Run test_food_inspections_etl.py to unit test
-4. Tables/files will be output to C:/users/<username>/Food Inspections Data 
+4. Tables/files will be output to C:/users/{username}/Food Inspections Data 
 5. Can also view line by line input/output in Food Inspections Notebook.ipynb
 6. Use to transformed data to analyze away!
   
 ## Technologies Used
-*I used the following technologies: Github, Jupyter Notebook, and Python 3.6.8. 
-*I used the following Python libraries: Sodapy, numpy, and pandas. 
+1. I used the following technologies: Github, Jupyter Notebook, and Python 3.6.8. 
+1. I used the following Python libraries: Sodapy, numpy, and pandas. 
 
 ## Requirements
 **Use a language of your choice to develop a script that reads the dataset and pushes an output to separate csv files**
