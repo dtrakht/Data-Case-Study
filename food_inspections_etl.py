@@ -1,25 +1,21 @@
-import sys
-!{sys.executable} -m pip install sodapy
-
 import pandas as pd
 from sodapy import Socrata
 import numpy as np
+import os.path
 
-#retrieving Food Inspections data using Socrata and converting to DF
+#Retrieving Food Inspections data using Socrata and converting to DF
 client = Socrata("data.cityofchicago.org", None)
 results = client.get("cwig-ma7x", limit=2000) #limit set for ease of processing use
 inspections_df = pd.DataFrame.from_records(results)
 
-inspections_df.head(n=10)
+#Iterate through to read the full dataset - uncomment when interestd in full dataset
+# initial = 2000
+# while results:
+#     results = client.get("cwig-ma7x", limit=2000, offset=initial)
+#     inspections_df = inspections_df.append(pd.DataFrame.from_records(results))
+#     initial += 2000
 
-#Iterate through to read the full dataset
-initial = 2000
-while results:
-    results = client.get("cwig-ma7x", limit=2000, offset=initial)
-    inspections_df = inspections_df.append(pd.DataFrame.from_records(results))
-    initial += 2000
-
-#drop uneccesary computed columns - consider dropping by column index; perform before outputing to csv
+#drop uneccesary computed columns
 inspections_df = inspections_df.drop(columns=[':@computed_region_43wa_7qmu', ':@computed_region_6mkv_f3dw', ':@computed_region_awaf_s7ux'
                             ,':@computed_region_bdys_3d7i', ':@computed_region_vrxf_vc4k', 'location', 'city', 'state', 'aka_name'])
 
@@ -41,7 +37,6 @@ try:
 except:
     print("No duplicates in this dataset")
     
-    
 #Remove trailing characters from date field
 inspections_df["inspection_date"] = inspections_df.inspection_date.str.split('T').str[0]
 
@@ -59,8 +54,7 @@ inspections_df = inspections_df.rename(columns={"license_":"License", "address":
 inspections = inspections_df.loc[:, inspections_df.columns != 'Violations']
 violations = inspections_df.loc[:, inspections_df.columns != 'Inspection Date']
 
-#Create two output tables and third table with entire target schema
-import os.path
+#Create two output tables and third table with entire schema
 root_path = os.path.dirname(os.getcwd())
 
 #Export to CSV

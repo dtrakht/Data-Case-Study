@@ -15,7 +15,7 @@ class TestETL(unittest.TestCase):
         that the Inspection ID field is not in the violations table
         """
         self.assertTrue(inspections.columns.any != 'Violations')
-        self.assertTrue(violations.columns.any != "Inspection ID")
+        self.assertTrue(violations.columns.any != "Inspection Date")
         
     def test_filtered_fields(self):
         """
