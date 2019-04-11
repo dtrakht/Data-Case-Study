@@ -5,7 +5,7 @@ By David Trakhtenberg
 1. Install sodapy dependency using pip install sodapy
 2. Run food_inspections_etl.py
 3. Run test_food_inspections_etl.py to unit test
-4. Tables/files will be output to C:/users/{username}/Food Inspections Data 
+4. Tables/files will be output to Food Inspections Data folder in the current working directory
 5. Can also view line by line input/output in Food Inspections Notebook.ipynb
 6. Use the transformed data to analyze away!
   
